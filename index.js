@@ -17,6 +17,3 @@ function containsStripeKey(string = '', { exact = true } = {}) {
 }
 module.exports = isStripeKey;
 
-const key = 'sk_live_vQp5vQIibsjlRWJm5nkMobJW00K8o8uW7q';
-
-console.log(isStripeKey(`hello${key}`));
