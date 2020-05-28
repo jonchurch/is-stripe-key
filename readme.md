@@ -14,11 +14,17 @@ const isStripeKey = require("is-stripe-key");
 isStripeKey("sk_live_vQp5vQIibsjlRWJm5nkMobJW00K8o8uW7q");
 // returns true
 
+isStripeKey("sk_test_vQp5vQIibsjlRWJm5nkMobJW00K8o8uW7q");
+// returns true
+
 isStripeKey("pk_live_vQp5vQIibsjlRWJm5nkMobJW00K8o8uW7q");
 // returns true
 
 isStripeKey("sk_live_vQp5vQ", { exact: false });
 // returns true
+
+isStripeKey("sk_live_vQp5vQ");
+// returns false
 ```
 
 The optional `options` parameter specifies the behavior of the matching.
